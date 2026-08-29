@@ -1,0 +1,213 @@
+:root {
+  --bg: #0f172a;
+  --card-bg: #1e293b;
+  --accent: #38bdf8;
+  --accent-dark: #0284c7;
+  --text-main: #e2e8f0;
+  --text-muted: #94a3b8;
+  --border: #334155;
+  --success: #4ade80;
+  --error: #f87171;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text-main);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.app {
+  width: 100%;
+  max-width: 760px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.app-header h1 {
+  margin: 0 0 6px;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.translator-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.lang-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.lang-select {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lang-select label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+select {
+  background: #0f172a;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.95rem;
+}
+
+.swap-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--accent);
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.swap-btn:hover {
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.text-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+@media (max-width: 600px) {
+  .text-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+.text-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  min-height: 160px;
+  resize: vertical;
+  background: #0f172a;
+  color: var(--text-main);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  font-family: inherit;
+}
+
+textarea:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: -1px;
+}
+
+textarea[readonly] {
+  background: #111c33;
+}
+
+.char-count {
+  align-self: flex-end;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.box-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.icon-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-main);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.icon-btn:hover {
+  border-color: var(--accent);
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.translate-btn {
+  width: 100%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: #04121f;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 13px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.translate-btn:hover {
+  opacity: 0.92;
+}
+
+.translate-btn:active {
+  transform: scale(0.99);
+}
+
+.translate-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.status-msg {
+  min-height: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  margin: 12px 0 0;
+}
+
+.status-msg.error {
+  color: var(--error);
+}
+
+.status-msg.success {
+  color: var(--success);
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "question": "What is your return policy?",
+    "answer": "You can return any item within 30 days of purchase for a full refund, provided it is in its original condition and packaging."
+  },
+  {
+    "question": "How do I track my order?",
+    "answer": "Once your order ships, you'll receive a confirmation email with a tracking number. You can use it on our website under 'Track My Order'."
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept Visa, MasterCard, American Express, PayPal, and bank transfers."
+  },
+  {
+    "question": "How long does shipping take?",
+    "answer": "Standard shipping takes 5–7 business days. Express shipping takes 2–3 business days. International orders may take 10–15 business days."
+  },
+  {
+    "question": "Can I change or cancel my order?",
+    "answer": "Orders can be modified or cancelled within 24 hours of placement. After that, the order enters processing and cannot be changed."
+  },
+  {
+    "question": "Do you offer free shipping?",
+    "answer": "Yes! Orders over $50 qualify for free standard shipping within the US."
+  },
+  {
+    "question": "How do I reset my password?",
+    "answer": "Click 'Forgot Password' on the login page, enter your email address, and we'll send you a link to reset your password."
+  },
+  {
+    "question": "How do I create an account?",
+    "answer": "Click 'Sign Up' at the top of the page, fill in your name, email, and a secure password, then verify your email to activate your account."
+  },
+  {
+    "question": "Is my personal information secure?",
+    "answer": "Yes. We use 256-bit SSL encryption to protect your data. We never sell or share your personal information with third parties."
+  },
+  {
+    "question": "How do I contact customer support?",
+    "answer": "You can reach our support team via email at support@shop.com, by phone at 1-800-123-4567 (Mon–Fri, 9am–6pm EST), or through live chat on our website."
+  },
+  {
+    "question": "What should I do if I receive a damaged item?",
+    "answer": "We're sorry to hear that! Please take photos of the damage and contact us within 48 hours of delivery. We'll arrange a replacement or full refund."
+  },
+  {
+    "question": "Can I exchange an item?",
+    "answer": "Yes, exchanges are accepted within 30 days. Contact support with your order number and the item you'd like to exchange for."
+  },
+  {
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we ship to over 50 countries. International shipping rates and delivery times vary by destination."
+  },
+  {
+    "question": "Where are you located?",
+    "answer": "Our headquarters is in New York, USA. Our warehouses are located in New York, Los Angeles, and Chicago."
+  },
+  {
+    "question": "Do you have a loyalty rewards program?",
+    "answer": "Yes! Our rewards program lets you earn 1 point per $1 spent. Points can be redeemed for discounts on future orders."
+  },
+  {
+    "question": "How do I apply a discount code?",
+    "answer": "On the checkout page, enter your discount code in the 'Promo Code' field and click 'Apply'. The discount will be reflected in your total."
+  },
+  {
+    "question": "What happens if an item is out of stock?",
+    "answer": "You can click 'Notify Me' on the product page to get an email alert as soon as the item is back in stock."
+  },
+  {
+    "question": "Are your products covered by warranty?",
+    "answer": "Most products come with a 1-year manufacturer warranty. Warranty details are listed on each product page."
+  },
+  {
+    "question": "How do I update my shipping address?",
+    "answer": "Go to 'My Account' > 'Address Book' to add or edit your shipping addresses. You can also update the address during checkout."
+  },
+  {
+    "question": "Can I place an order without creating an account?",
+    "answer": "Yes! You can check out as a guest. However, creating an account lets you track orders, save addresses, and earn rewards points."
+  }
+]

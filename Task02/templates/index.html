@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ Chatbot</title>
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <div class="app-wrapper">
+
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="bot-avatar large">🤖</div>
+        <h1 class="sidebar-title">FAQ Assistant</h1>
+        <p class="sidebar-subtitle">Powered by NLP · TF-IDF Matching</p>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="section-label">💡 Suggested Questions</h3>
+        <ul id="faq-suggestions" class="suggestion-list">
+          <li class="suggestion-skeleton"></li>
+          <li class="suggestion-skeleton"></li>
+          <li class="suggestion-skeleton"></li>
+        </ul>
+      </div>
+
+      <div class="sidebar-section">
+        <h3 class="section-label">📚 Topics Covered</h3>
+        <div class="topic-tags">
+          <span class="tag">Orders</span>
+          <span class="tag">Returns</span>
+          <span class="tag">Shipping</span>
+          <span class="tag">Payments</span>
+          <span class="tag">Account</span>
+          <span class="tag">Warranty</span>
+          <span class="tag">Rewards</span>
+        </div>
+      </div>
+
+      <button id="clear-btn" class="clear-btn" title="Clear conversation">
+        🗑 Clear Chat
+      </button>
+    </aside>
+
+    <!-- ── Main chat panel ── -->
+    <main class="chat-panel">
+
+      <!-- Header -->
+      <header class="chat-header">
+        <div class="header-left">
+          <div class="bot-avatar small">🤖</div>
+          <div>
+            <span class="bot-name">FAQ Bot</span>
+            <span class="status-dot"></span>
+            <span class="status-text">Online</span>
+          </div>
+        </div>
+        <div class="header-right">
+          <span id="msg-count" class="msg-count">0 messages</span>
+        </div>
+      </header>
+
+      <!-- Messages -->
+      <section id="chat-messages" class="chat-messages" aria-live="polite" aria-label="Chat messages">
+        <!-- Welcome message injected by JS -->
+      </section>
+
+      <!-- Typing indicator -->
+      <div id="typing-indicator" class="typing-indicator hidden" aria-hidden="true">
+        <div class="bot-avatar tiny">🤖</div>
+        <div class="typing-dots">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Input bar -->
+      <footer class="chat-footer">
+        <form id="chat-form" class="chat-form" autocomplete="off">
+          <textarea
+            id="user-input"
+            class="chat-input"
+            placeholder="Ask a question…"
+            rows="1"
+            maxlength="300"
+            aria-label="Your message"
+          ></textarea>
+          <button type="submit" id="send-btn" class="send-btn" aria-label="Send message">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                 stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+        <p class="char-counter"><span id="char-count">0</span>/300</p>
+      </footer>
+
+    </main>
+  </div>
+
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>

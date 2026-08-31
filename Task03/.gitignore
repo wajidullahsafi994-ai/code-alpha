@@ -1,0 +1,26 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Nested git folder (accidentally copied)
+.git/
+
+# Large model checkpoints
+models/saved/*.pt
+
+# Processed numpy / pickle arrays (regeneratable)
+data/processed/*.npy
+data/processed/*.pkl
+
+# Generated audio WAV files (large)
+output/audio/*.wav
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

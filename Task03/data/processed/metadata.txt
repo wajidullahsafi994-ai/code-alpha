@@ -1,0 +1,5 @@
+vocab_size=1188
+seq_len=64
+num_samples=23484
+num_files_parsed=98
+num_files_total=98

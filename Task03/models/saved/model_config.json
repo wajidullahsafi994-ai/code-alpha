@@ -1,0 +1,10 @@
+{
+  "architecture": "lstm_attention",
+  "embed_dim": 64,
+  "hidden_size": 128,
+  "num_layers": 2,
+  "dropout": 0.3,
+  "bidirectional": false,
+  "vocab_size": 1188,
+  "seq_len": 64
+}
